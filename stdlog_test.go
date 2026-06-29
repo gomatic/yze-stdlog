@@ -3,9 +3,10 @@ package stdlog_test
 import (
 	"testing"
 
-	stdlog "github.com/gomatic/yze-go-stdlog"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/tools/go/analysis/analysistest"
+
+	stdlog "github.com/gomatic/yze-stdlog"
 )
 
 func TestStandardLogImportIsReported(t *testing.T) {
@@ -14,6 +15,6 @@ func TestStandardLogImportIsReported(t *testing.T) {
 
 func TestRegistrationIsWellFormed(t *testing.T) {
 	assert.NoError(t, stdlog.Registration.Validate())
-	assert.Equal(t, "yze/go/stdlog", stdlog.Registration.RuleID())
+	assert.Equal(t, "yze/stdlog", stdlog.Registration.RuleID())
 	assert.Same(t, stdlog.Analyzer, stdlog.Registration.Analyzer)
 }

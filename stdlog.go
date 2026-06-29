@@ -25,7 +25,6 @@ var Analyzer = &analysis.Analyzer{
 // Registration declares this analyzer to the yze framework.
 var Registration = goyze.Registration{
 	Name:       "stdlog",
-	Group:      "go",
 	Categories: []goyze.Category{"data"},
 	URL:        "https://docs.gomatic.dev/yze/go/stdlog",
 	Analyzer:   Analyzer,
