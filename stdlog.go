@@ -26,7 +26,7 @@ var Analyzer = &analysis.Analyzer{
 var Registration = goyze.Registration{
 	Name:       "stdlog",
 	Categories: []goyze.Category{"data"},
-	URL:        "https://docs.gomatic.dev/yze/go/stdlog",
+	URL:        "https://docs.gomatic.dev/yze/stdlog",
 	Analyzer:   Analyzer,
 }
 

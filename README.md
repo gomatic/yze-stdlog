@@ -1,8 +1,8 @@
-# yze-go-stdlog
+# yze-stdlog
 
-A [`yze`](https://github.com/gomatic/yze) analyzer (group `go`, category `data`) enforcing the gomatic Go logging standard: the standard library `log` package is forbidden in favor of structured logging with `log/slog`.
+A [`yze`](https://github.com/gomatic/yze) analyzer (category `data`) enforcing the gomatic Go logging standard: the standard library `log` package is forbidden in favor of structured logging with `log/slog`.
 
-- **Rule:** `yze/go/stdlog`
-- **Binary:** `cmd/yze-go-stdlog` runs it standalone.
+- **Rule:** `yze/stdlog`
+- **Binary:** `cmd/yze-stdlog` runs it standalone.
 
 Built on the [`go-yze`](https://github.com/gomatic/go-yze) framework.
